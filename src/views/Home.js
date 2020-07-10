@@ -6,6 +6,7 @@ import SuggestedLocation from '../components/SuggestedLocation';
 import TopPicks from '../components/TopPicks';
 import AvailabeCategory from '../components/AvailabeCategory';
 import Footer from '../components/Footer';
+import BeforeFooter from '../components/BeforeFooter';
 
 const Homepage = () => {
     return (
@@ -16,6 +17,7 @@ const Homepage = () => {
             <SuggestedLocation />
             <TopPicks />
             <AvailabeCategory />
+            <BeforeFooter />
             <Footer />
         </div>
     );

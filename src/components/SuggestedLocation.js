@@ -31,7 +31,7 @@ class SuggestedLocation extends Component {
                     <h3>Suggested Locations</h3>
                     <p>See out top pick of cities with good artisans</p>
 
-                    <div className="location-holder">
+                    <div className="location-holder row" >
                         {this.locationList()}
                     </div>
                 </div>            

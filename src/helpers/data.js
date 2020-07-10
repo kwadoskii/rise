@@ -1,4 +1,14 @@
-import img from '../images/man-welding-metal-bars-2381463.jpg';
+import toppick1 from '../images/toppick1.png';
+import toppick2 from '../images/toppick2.png';
+import toppick3 from '../images/toppick3.png';
+const available1 = require('../images/available1.png');
+const available2 = require('../images/available2.png');
+const available3 = require('../images/available3.png');
+const available4 = require('../images/available4.png');
+const available5 = require('../images/available5.png');
+const available6 = require('../images/available6.png');
+const available7 = require('../images/available7.png');
+const available8 = require('../images/available8.png');
 
 export const locations = () => {
     return (
@@ -42,7 +52,7 @@ export const topPicks = () => {
         [
             {
                 id: 1,
-                imgPath: img,
+                imgPath: toppick1,
                 category: 'Hoodies Top and Shirts',
                 name: 'Dazzling Beauty Palace',
                 desc: "Nostrud nulla voluptate consectetur aliqua ullamco Lorem ea est incididunt ea do velit magna. Consequat fugiat culpa qui aliqua culpa adipisicing laborum fugiat.",
@@ -54,7 +64,7 @@ export const topPicks = () => {
             },
             {
                 id: 2,
-                imgPath: img,
+                imgPath: toppick2,
                 category: 'Soft Arm Chair',
                 name: 'Adekola Furniture',
                 desc: "Nostrud nulla voluptate consectetur aliqua ullamco Lorem ea est incididunt ea do velit magna. Consequat fugiat culpa qui aliqua culpa adipisicing laborum fugiat.",
@@ -66,7 +76,7 @@ export const topPicks = () => {
             },
             {
                 id: 3,
-                imgPath: img,
+                imgPath: toppick3,
                 category: 'Red Velvet Cake',
                 name: 'Cake and Pastries',
                 desc: "Nostrud nulla voluptate consectetur aliqua ullamco Lorem ea est incididunt ea do velit magna. Consequat fugiat culpa qui aliqua culpa adipisicing laborum fugiat.",
@@ -78,7 +88,7 @@ export const topPicks = () => {
             },
             {
                 id: 4,
-                imgPath: img,
+                imgPath: toppick3,
                 category: 'Hoodies Top and Shirts',
                 name: 'Dazzling Beauty Palace',
                 desc: "Nostrud nulla voluptate consectetur aliqua ullamco Lorem ea est incididunt ea do velit magna. Consequat fugiat culpa qui aliqua culpa adipisicing laborum fugiat.",
@@ -90,7 +100,7 @@ export const topPicks = () => {
             },
             {
                 id: 5,
-                imgPath: img,
+                imgPath: toppick3,
                 category: 'Hoodies Top and Shirts',
                 name: 'Dazzling Beauty Palace',
                 desc: "Nostrud nulla voluptate consectetur aliqua ullamco Lorem ea est incididunt ea do velit magna. Consequat fugiat culpa qui aliqua culpa adipisicing laborum fugiat.",
@@ -102,7 +112,7 @@ export const topPicks = () => {
             },
             {
                 id: 6,
-                imgPath: img,
+                imgPath: toppick3,
                 category: 'Hoodies Top and Shirts',
                 name: 'Dazzling Beauty Palace',
                 desc: "Nostrud nulla voluptate consectetur aliqua ullamco Lorem ea est incididunt ea do velit magna. Consequat fugiat culpa qui aliqua culpa adipisicing laborum fugiat.",
@@ -114,7 +124,7 @@ export const topPicks = () => {
             },
             {
                 id: 7,
-                imgPath: img,
+                imgPath: toppick3,
                 category: 'Hoodies Top and Shirts',
                 name: 'Dazzling Beauty Palace',
                 desc: "Nostrud nulla voluptate consectetur aliqua ullamco Lorem ea est incididunt ea do velit magna. Consequat fugiat culpa qui aliqua culpa adipisicing laborum fugiat.",
@@ -133,7 +143,7 @@ export const availableCate = () => {
         [
             {
                 id: 1,
-                imgPath: img,
+                imgPath: available1,
                 category: 'Furniture',
                 localServices: 45,
                 intlServices: 2,
@@ -141,7 +151,7 @@ export const availableCate = () => {
             },
             {
                 id: 2,
-                imgPath: img,
+                imgPath: available2,
                 category: 'Banking',
                 localServices: 45,
                 intlServices: 2,
@@ -149,7 +159,7 @@ export const availableCate = () => {
             },
             {
                 id: 3,
-                imgPath: img,
+                imgPath: available3,
                 category: 'Make Over',
                 localServices: 45,
                 intlServices: 2,
@@ -157,7 +167,7 @@ export const availableCate = () => {
             },
             {
                 id: 4,
-                imgPath: img,
+                imgPath: available4,
                 category: 'Photography',
                 localServices: 45,
                 intlServices: 2,
@@ -165,32 +175,32 @@ export const availableCate = () => {
             },
             {
                 id: 5,
-                imgPath: img,
-                category: 'Baking',
+                imgPath: available5,
+                category: 'Electricity',
                 localServices: 45,
                 intlServices: 2,
                 payOnDelivery: 10
             },
             {
                 id: 6,
-                imgPath: img,
-                category: 'Shoe Making',
+                imgPath: available6,
+                category: 'Fashion Design',
                 localServices: 45,
                 intlServices: 2,
                 payOnDelivery: 10
             },
             {
                 id: 7,
-                imgPath: img,
-                category: 'Fashion',
+                imgPath: available7,
+                category: 'Painting',
                 localServices: 45,
                 intlServices: 2,
                 payOnDelivery: 10
             },
             {
                 id: 8,
-                imgPath: img,
-                category: 'Painting',
+                imgPath: available8,
+                category: 'Photography',
                 localServices: 45,
                 intlServices: 2,
                 payOnDelivery: 10

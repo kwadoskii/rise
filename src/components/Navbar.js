@@ -4,7 +4,7 @@ import logo from '../images/logo.svg';
 const Navbar = () => {
     return (
              <div>
-            <nav className="navbar navbar-expand-md pt-4 pb-lg-2 pl-lg-5 pr-lg-5 xnav-bg">
+            <nav className="navbar navbar-expand-md navbar-dark bg-dark pt-4 pb-lg-2 pl-lg-5 pr-lg-5 xnav-bg">
                 <a className="navbar-brand" href="index.html">
                     <img src={logo} width="24px" height="26.7px" className="d-inline-block align-top" alt="logo" />
                     <span className="xlogo-text">Rise</span>

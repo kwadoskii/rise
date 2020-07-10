@@ -34,16 +34,11 @@ body{
     color: #ffffff !important;
 }
 
-li{
-    padding: 0 26px;
-    height: 20px;
-}
-
 
 /* jumbotron */
 .xjumbotron{
     width: 100%;
-    padding: 75px 279px 18px 279px;
+    padding: 10em 2.5em 1.3em 2.5em;
     text-align: center;
     background: rgba(40, 40, 40, 0.9);
     background-blend-mode: darken;
@@ -67,13 +62,11 @@ li{
 }
 
 .xjumbotron-btns{
-    /* justify-items: center; */
     padding: 58px 0 169px 0;
 }
 
 .xbtn{
     display: inline-block;
-    /* font-family: Open Sans; */
     font-style: normal;
     font-weight: normal;
     color: #FFFFFF;
@@ -110,13 +103,13 @@ li{
 .search-holder{
     background: #FFFFFF;
     box-shadow: 0px 3px 7px rgba(96, 96, 96, 0.34);
-    padding: 30px 64px 29px 63px;
+    padding: 1.8em 2em 1.8em 2em;
     display: flex;
     flex-direction: row;
-    margin-left: 54px;
-    margin-right: 65px;
-    margin-top: -61px;
-    width: calc(100% - 119px);
+    flex-flow: wrap;
+    margin: auto auto;
+    margin-top: -4em;
+    width: 90%;
 }
 
 .input input, .input select, .input>.search-btn{ 
@@ -127,7 +120,8 @@ li{
 .input{
     flex: 1 2;
     width: 100%;
-    margin: 0 16px;
+    min-width: 229px;
+    margin: 10px 16px;
     font-size: 17px;
     line-height: 23px;
     color: rgba(20, 20, 20, 0.45);
@@ -162,15 +156,7 @@ select{
 }
 
 .input-text{
-    /* width: 331px; */
-}
-
-.input-cate{
-    /* width: 214px; */
-}
-
-.input-loc{
-    /* width: 223px; */
+    min-width: 229px;
 }
 
 .search-btn{
@@ -184,7 +170,7 @@ select{
 
 /* suggested location */
 .suggested-holder{
-    padding: 52px 0 0 35px;
+    padding: 2.4em 1em;
     font-style: normal;
     font-weight: normal;
 }
@@ -205,13 +191,15 @@ select{
     padding: 35px 0 80px 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .location{
-    width: 200px;
+    width: 100%;
+    min-width: 228px;
     padding: 24px 0 23px 0;
     background: #FFFFFF;
-    margin: 0 21px;
+    margin: 20px;
     box-shadow: 0px 3px 4px rgba(216, 215, 215, 0.3);
     text-align: center;
     font-style: normal;
@@ -231,10 +219,6 @@ select{
     line-height: 20px;
 }
 
-.location:first-child{
-    margin-left: 0 !important;
-}
-
 
 /* footer */
 .xfooter{
@@ -242,7 +226,7 @@ select{
     background-blend-mode: darken;
     font-style: normal;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 31px;
     color: #FFFFFF;
     padding: 21px 31px 34px 20px;
@@ -252,6 +236,7 @@ select{
 
 .copyright{
     float: left;
+    padding-left: 2em !important;
 }
 
 .copyright p{
@@ -265,16 +250,25 @@ select{
     display: flex;
 }
 
-.social{
-    background: rgba(255, 255, 255, 0.2);
-    height: 68px;
-    width: 68px;
-    border-radius: 50%;
-    margin: 0 8.5px;
+.social img{
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    top: 28%;
+    right: 24%;
 }
 
-.social img{
-    display: inline-block;
+.social {
+    cursor: pointer;
+    width: 68px;
+    height: 68px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 34px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin: 0 8.5px;
 }
 
 
@@ -292,12 +286,9 @@ select{
 
 .topPickCard{
     margin: 0 30px;
-    /* min-width: 297px; */
+    min-width: 25%;
+    min-width: 289px;
     box-shadow: 0px 3px 7px rgba(96, 96, 96, 0.34);
-}
-
-.card-image{
-    /* height: 354px; */
 }
 
 .card-cate{
@@ -305,7 +296,7 @@ select{
     height: 354px;
 }
 
-.card-cate .category{
+.card-cate .category, .cate-image .category{
     background: linear-gradient(115.36deg, #F41313 -28.55%, #F90178 125.13%);
     background-blend-mode: darken;
     background-size: cover;
@@ -407,13 +398,10 @@ hr{
     text-transform: none !important;
 }
 
+
 /* avilable cart */
-.catergotyCard-holder{
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    margin: 15px;
-    width: 100%;
+.cate-holder{
+    margin-top: 20px;
 }
 
 .catergotyCard{
@@ -426,6 +414,10 @@ hr{
 .cate-image{
     height: 234px;
     background-size: cover;
+}
+
+.cate-card-image{
+    box-shadow: 0px 3px 7px rgba(96, 96, 96, 0.34);
 }
 
 .locals{
@@ -441,10 +433,73 @@ hr{
 }
 
 .locals hr{
-    margin: 0 0;
+    margin: auto auto;
     padding: 0 0;
+    width: 100%;
 }
 
 .cate-cate-details{
-    padding-bottom: 30px;
+    padding: 0 18px 30px 18px;
+    box-shadow: 0px 3px 7px rgba(96, 96, 96, 0.34);
+}
+
+.more-cate{
+    padding: 88px 0;
+    margin: auto;
+}
+
+.more-cate p {
+    background: linear-gradient(116.62deg, #F41313 -28.55%, #F90178 125.13%);
+    background-blend-mode: darken;
+    mix-blend-mode: normal;
+    color: #ffffff;
+    padding: 19px 52px;
+}
+
+.cate-image .category{
+    background: linear-gradient(115.36deg, #F41313 -28.55%, #F90178 125.13%);
+    background-blend-mode: darken;
+    background-size: cover;
+    mix-blend-mode: normal;
+    color: #ffffff;
+    padding: 10px;
+    display: inline-table;
+    margin-top: 173px;
+    margin-left: 36px;
+}
+
+.xgrey{
+    color: #C4C4C4;
+}
+
+
+/* before footer */
+.beforeFooter{
+    background: rgba(40, 40, 40, 0.88);
+    color: #ffffff;
+    padding: 3.8em 2em 2em 2em !important;
+}
+
+.beforeFooter p{
+    padding-top: 43px;
+}
+
+.xlogo-fotter-text{
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 31px;
+    padding: 0px 0 0 0;
+}
+
+ul{
+    padding-top: 32px; 
+}
+
+.second-ul{
+    padding-top: 72px;
+}
+
+.second-ul li, .first-ul li{
+    list-style: url('./images/arroow-right.png');
+    margin: 10px 0;
 }

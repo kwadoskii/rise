@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { availableCate } from '../helpers/data';
 import AvailableCategoryCard from './AvailableCategoryCard';
+import Button from './Button';
 
 class AvailabeCategory extends Component {
 
@@ -17,6 +18,7 @@ class AvailabeCategory extends Component {
             return (
                 <AvailableCategoryCard
                     imgPath={cate.imgPath}
+                    category={cate.category}
                     localServices={cate.localServices}
                     intlServices={cate.intlServices}
                     payOnDelivery={cate.payOnDelivery}
@@ -33,8 +35,12 @@ class AvailabeCategory extends Component {
                     <h3>Available Categories</h3>
                     <p>See out top pick of cities with good artisans</p>
 
-                    <div className="catergotyCard-holder">
+                    <div className="row container-fluid" style={{ margin: "auto" }}>
                         {this.availableCatesList()}
+
+                        <div className="more-cate">
+                            <p>LOAD MORE CATEGORIES</p>
+                        </div>
                     </div>
                 </div>
             </div>
