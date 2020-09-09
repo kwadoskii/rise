@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Button = (props) => {
-    return (
-        <button 
-            className={props.class}
-            type={props.type}>
-        {props.name}
-        </button>
-    );
-}
+const Button = ({ classes, type = "button", name }) => {
+  return (
+    <button className={`xbtn search-btn ${classes}`} type={type}>
+      {name}
+    </button>
+  );
+};
 
 export default Button;
